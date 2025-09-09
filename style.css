@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1.5px solid;
+    margin-bottom:100px;
+    background-color: white;
+    z-index: 999;
+    position: sticky;
+    top: 0%;
+}
+nav #logo{
+    font-size: 23px;
+    cursor: pointer;
+    color: rgb(20, 2, 79);
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav li{
+    list-style: none;
+    transition: .2s;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+nav li:hover{
+    scale: 1.1;
+}
+nav li a:hover{
+    color: rgb(20, 2, 79);
+}
+#detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
+#aboutMe {
+    flex: 3; 
+    border: 1.5px solid #ccc;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: justify;
+
+}
+
+#photo {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo img {
+    border: solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #555;
+    padding: 0;
+}
+
+#aboutMe h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+#skills h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#skills p{
+    width: 60vw;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#skills ul{
+    display: flex;
+    gap: 30px;
+}
+#skills li,img{
+    list-style: none;
+    font-size: 20px;
+    border: solid gray;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#skills img{
+    border:none;
+    padding: 0;
+}
+#academics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 55px 0;
+}
+#academics h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+table{
+    border: solid gray;
+    border-radius: 1rem;
+    padding: 10px;
+}
+th,td{
+    border: solid gray;
+    padding: 10px;
+    text-align: center;
+}
+#contact{
+    margin: 55px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#PhNumber{
+    text-align: center;
+    margin: 20px 0;
+}
+#email a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+#email a:hover{
+    color: rgb(20, 2, 79);
+    transition: .3s;
+}
+#email a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background:rgb(20, 2, 79);
+    transition: width 0.5s ease;
+    transform: translateX(-50%); 
+    }
+
+#email a:hover::after {
+    width: 100%;
+    }
+
+footer{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer p{
+    margin: 10px;
+    text-decoration: underline;
+}
+#socialMedias{
+    display: flex;
+    flex-direction: column;
+}
+#socialMedias a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#socialMedias a:hover{
+    color: rgb(20, 2, 79);
+}
+
+@media(max-width:600px){
+    nav{
+        padding: 0 20px;
+    }
+    #logo{
+        font-size: 10px;
+    }
+    nav li{
+        font-size: smaller;
+    }
+    #detail{
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+    #skills{
+        padding: 0 20px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    table{
+        font-size: small;
+    }
+    #skills li{
+        font-size: small;
+    }
+}
+@media(max-width:550px){
+    nav span{
+        display: none;
+    }
+    nav #logo{
+        font-size: large;
+    }
+    table{
+        font-size: smaller;
+    }
+    td,tr{
+        font-size: smaller;
+    }
+}
