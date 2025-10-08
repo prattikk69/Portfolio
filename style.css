@@ -117,7 +117,7 @@ nav li a:hover{
 }
 #skills i{
     font-size: 1.3rem;
-    padding: 10px;
+    padding: 0 10px;
 }
 #skills li,img{
     list-style: none;
@@ -134,7 +134,7 @@ nav li a:hover{
 }
 #skills img{
     border:none;
-    padding: 0 15px;
+    padding: 0 7px;
 }
 #academics{
     display: flex;
@@ -267,4 +267,3 @@ footer p{
         font-size: smaller;
     }
 }
-
