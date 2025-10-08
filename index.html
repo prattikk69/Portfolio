@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
 
     <meta name="keywords" content="Prattikk">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="icon/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -105,6 +105,7 @@
                 <p>Ncell: 9702634325</p>
             </div>
             <div id="email">
+                <p>Click here to email me:</p>
                 <a href="mailto:pratikt866@gmail.com">
                     <p><i class="fa-solid fa-envelope"></i>Write Me</p>
                 </a>
@@ -113,15 +114,21 @@
         <hr>
     </main>
     <footer>
-        <p>©2025 Pratik Thapa | All rights reserved</p>
-        <div id="socialMedias">
+        <div class="copyright">
+        <div class="year"></div>
+    </div>
+    <div id="socialMedias">
             <p>More here</p>
             <a href="https://github.com/prattikk69" target="_blank"><i class="fa-brands fa-square-github"></i>Github</a>
             <a href="https://www.instagram.com/pratt1kk?igsh=MTNrdm1uaWNxOXp1eg==" target="_blank">
-                <i class="fa-brands fa-instagram"></i>Instagram</a>
+            <i class="fa-brands fa-instagram"></i>Instagram</a>
         </div>
     </footer>
+
+    <script>
+    const getYear = new Date().getFullYear();
+    const year = document.querySelector('.year').textContent = `©${(getYear)} Pratik Thapa | All rights reserved`;
+</script>
+
 </body>
 </html>
-
-
