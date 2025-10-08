@@ -105,6 +105,10 @@ nav li a:hover{
     font-size: 30px;
     margin-bottom: 20px;
 }
+#skills i{
+    font-size: 1.5rem;
+    padding: 10px;
+}
 #skills p{
     width: 60vw;
     margin-bottom: 20px;
@@ -250,4 +254,5 @@ footer p{
     td,tr{
         font-size: smaller;
     }
+
 }
