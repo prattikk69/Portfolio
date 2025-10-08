@@ -105,10 +105,6 @@ nav li a:hover{
     font-size: 30px;
     margin-bottom: 20px;
 }
-#skills i{
-    font-size: 1.6rem;
-    padding: 10px 20px;
-}
 #skills p{
     width: 60vw;
     margin-bottom: 20px;
@@ -117,6 +113,11 @@ nav li a:hover{
 #skills ul{
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+}
+#skills i{
+    font-size: 1.3rem;
+    padding: 10px;
 }
 #skills li,img{
     list-style: none;
@@ -133,7 +134,7 @@ nav li a:hover{
 }
 #skills img{
     border:none;
-    padding: 0;
+    padding: 0 7px;
 }
 #academics{
     display: flex;
@@ -166,6 +167,7 @@ th,td{
     margin: 20px 0;
 }
 #email a{
+    text-align: center;
     color: black;
     text-decoration: none;
     position: relative;
@@ -213,7 +215,9 @@ footer p{
 #socialMedias a:hover{
     color: rgb(20, 2, 79);
 }
-
+.year{
+    text-decoration: underline;
+}
 @media(max-width:600px){
     nav{
         padding: 0 20px;
@@ -240,6 +244,14 @@ footer p{
     #skills li{
         font-size: small;
     }
+.copyright{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 }
 @media(max-width:550px){
     nav span{
@@ -254,7 +266,4 @@ footer p{
     td,tr{
         font-size: smaller;
     }
-
 }
-
-
