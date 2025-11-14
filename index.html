@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
 
     <meta name="keywords" content="Prattikk">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="icon/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
         <div id="quick_Links">
             <ul>
                 <li><a href="#"><i title="Home" class="fa-solid fa-house"></i><span>Home</span> </a></li>
-                <li><a href="#skills"><i title="Skills" class="fa-solid fa-code"></i><span>Skills</span> </a></li>
-                <li><a href="#academics"><i title="Academics" class="fa-solid fa-book"></i><span> Academics</span></a></li>
-                <li><a href="#contact"><i title="Contact" class="fa-solid fa-mobile"></i><span> Contact Me</span></a></li>
+                <li><a href="#callSkills"><i title="Skills" class="fa-solid fa-code"></i><span>Skills</span> </a></li>
+                <li><a href="#callAcademics"><i title="Academics" class="fa-solid fa-book"></i><span> Academics</span></a></li>
+                <li><a href="#callContact"><i title="Contact" class="fa-solid fa-mobile"></i><span> Contact Me</span></a></li>
             </ul>
         </div>
     </nav>
@@ -35,7 +35,7 @@
         <section id="detail">
             
             <div id="aboutMe">
-                <h2>Hi I'm Pratik</h2>
+                <h2><span id="blink"></span></h2>
                 <p>I’m 19 years old and currently a first-year Bachelor student. 
                     I have a strong passion for web development, and 
                     I enjoy exploring new technologies to improve my 
@@ -50,7 +50,7 @@
                 <img src="Herobrine.webp" alt="">
             </div>
         </section>
-        <hr>
+        <hr id="callSkills">
         <section id="skills">
             <h2>My Skills</h2>
             <p>
@@ -67,7 +67,7 @@
                 <li><img src="Frame 1.svg" alt="C++" title="C++"></li>
             </ul>
         </section>
-                <hr>
+                <hr id="callAcademics">
         <section id="academics">
             <h2>My Academics</h2>
             <table>
@@ -97,7 +97,7 @@
                 </tr>
             </table>
         </section>
-        <hr>
+        <hr id="callContact">
         <section id="contact">
             <div id="PhNumber">
                 <h2><i class="fa-solid fa-mobile-button"></i>Contact Number</h2>
@@ -106,7 +106,7 @@
             </div>
             <div id="email">
                 <p>Click here to email me:</p>
-                <a href="mailto:prattikkthapa@gmail.com">
+                <a href="mailto:pratikt866@gmail.com">
                     <p><i class="fa-solid fa-envelope"></i>Write Me</p>
                 </a>
             </div>
@@ -126,11 +126,24 @@
     </footer>
 
     <script>
+    const text = "Hi I'm Pratik";
+    let i = 0;
+
+    function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("blink").textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100); // typing speed
+    }
+    }
+
+    typeWriter();
+
+
+
     const getYear = new Date().getFullYear();
     const year = document.querySelector('.year').textContent = `©${(getYear)} Pratik Thapa | All rights reserved`;
 </script>
 
 </body>
 </html>
-
-
