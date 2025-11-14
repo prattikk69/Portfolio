@@ -8,6 +8,8 @@ html{
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
 }
 h2{
     font-family: 'Poppins', sans-serif;
@@ -25,7 +27,7 @@ nav{
     font-family: 'Poppins', sans-serif;
     border-bottom: 1.5px solid;
     margin-bottom:100px;
-    background-color: white;
+    background-color: black;
     z-index: 999;
     position: sticky;
     top: 0%;
@@ -33,7 +35,20 @@ nav{
 nav #logo{
     font-size: 23px;
     cursor: pointer;
-    color: rgb(20, 2, 79);
+    color:white;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow{
+    0%{
+        text-shadow: 
+        0 0 2px #fff,
+        0 0 2px #fff;
+    }
+    100%{
+        text-shadow: 
+        0 0 4px #fff,
+        0 0 4px #fff;
+    }
 }
 nav ul{
     display: flex;
@@ -45,14 +60,21 @@ nav li{
 }
 nav li a{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: .2s;
 }
 nav li:hover{
     scale: 1.1;
 }
-nav li a:hover{
-    color: rgb(20, 2, 79);
+#blink::after{
+    content: "";
+    border-right: solid;
+    animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
 }
 #detail {
     display: flex;
@@ -88,6 +110,15 @@ nav li a:hover{
     object-fit: cover;
     border: 3px solid #555;
     padding: 0;
+    animation: glowPhoto 2s infinite alternate;
+}
+@keyframes glowPhoto {
+    0%{
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2)
+    }
+    100%{
+        box-shadow:  0 0 5px rgba(255, 255, 255, 0.2)
+    }
 }
 
 #aboutMe h2 {
@@ -134,7 +165,7 @@ nav li a:hover{
 }
 #skills img{
     border:none;
-    padding: 0 10px;
+    padding: 0 7px;
 }
 #academics{
     display: flex;
@@ -168,12 +199,12 @@ th,td{
 }
 #email a{
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     position: relative;
 }
 #email a:hover{
-    color: rgb(20, 2, 79);
+    color: rgb(255, 255, 255);
     transition: .3s;
 }
 #email a::after {
@@ -183,7 +214,7 @@ th,td{
     left: 50%;
     width: 0%;
     height: 2px;
-    background:rgb(20, 2, 79);
+    background:rgb(255, 255, 255);
     transition: width 0.5s ease;
     transform: translateX(-50%); 
     }
@@ -208,12 +239,12 @@ footer p{
     flex-direction: column;
 }
 #socialMedias a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
 }
 #socialMedias a:hover{
-    color: rgb(20, 2, 79);
+    color: rgb(255, 255, 255);
 }
 .year{
     text-decoration: underline;
@@ -267,4 +298,3 @@ footer p{
         font-size: smaller;
     }
 }
-
