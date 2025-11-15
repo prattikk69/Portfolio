@@ -110,7 +110,7 @@ nav li:hover{
     object-fit: cover;
     border: 3px solid #555;
     padding: 0;
-    animation: glowPhoto 2s infinite alternate;
+    animation: glowPhoto 1s infinite alternate;
 }
 @keyframes glowPhoto {
     0%{
@@ -298,3 +298,4 @@ footer p{
         font-size: smaller;
     }
 }
+
