@@ -110,7 +110,7 @@ nav li:hover{
     object-fit: cover;
     border: 3px solid #555;
     padding: 0;
-    animation: glowPhoto 1s infinite alternate;
+    animation: glowPhoto 2s infinite alternate;
 }
 @keyframes glowPhoto {
     0%{
@@ -145,6 +145,7 @@ nav li:hover{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #skills i{
     font-size: 1.3rem;
@@ -166,6 +167,38 @@ nav li:hover{
 #skills img{
     border:none;
     padding: 0 7px;
+}
+#projects{
+    max-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+#projects h2{
+    font-size: 30px;
+    margin: 30px 0;
+}
+#projects ul{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#projects a{
+    text-decoration: none;
+    color: white;
+}
+#projects li{
+    list-style: none;
+    border: solid;
+    padding: 20px;
+    border-radius: 8px;
+    transition: .2s;
+}
+#projects li:hover{
+    scale: 1.05;
 }
 #academics{
     display: flex;
@@ -249,7 +282,7 @@ footer p{
 .year{
     text-decoration: underline;
 }
-@media(max-width:600px){
+@media(max-width:680px){
     nav{
         padding: 0 20px;
     }
@@ -257,7 +290,7 @@ footer p{
         font-size: 10px;
     }
     nav li{
-        font-size: smaller;
+        font-size: 12px;
     }
     #detail{
         flex-direction: column-reverse;
@@ -298,4 +331,3 @@ footer p{
         font-size: smaller;
     }
 }
-
