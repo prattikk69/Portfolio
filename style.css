@@ -58,7 +58,7 @@ nav li{
     list-style: none;
     transition: .2s;
 }
-nav li: active {
+nav li:active {
 transform: translateY(1px);
 }
 nav li a{
