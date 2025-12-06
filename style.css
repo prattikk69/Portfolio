@@ -60,6 +60,7 @@ nav li{
 }
 nav li:active {
 transform: translateY(1px);
+scale: 0.9;
 }
 nav li a{
     text-decoration: none;
