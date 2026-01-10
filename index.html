@@ -37,7 +37,7 @@
             
             <div id="aboutMe">
                 <h2><span id="blink"></span></h2>
-                <p>I’m 19 years old and currently a first-year Bachelor student. 
+                <p>I’m <span id="age"></span> years old and currently a first-year Bachelor student. 
                     I have a strong passion for web development, and 
                     I enjoy exploring new technologies to improve my 
                     skills and create engaging projects. In my free time, 
@@ -139,7 +139,7 @@
             <p>More here</p>
             <a href="https://github.com/prattikk69" target="_blank"><i class="fa-brands fa-square-github"></i>Github</a>
             <a href="https://www.instagram.com/pratt1kk?igsh=MTNrdm1uaWNxOXp1eg==" target="_blank">
-            <i class="fa-brands fa-instagram"></i>Instagram</a>
+                <i class="fa-brands fa-instagram"></i>Instagram</a>
         </div>
     </footer>
 
@@ -161,6 +161,7 @@
 
     const getYear = new Date().getFullYear();
     const year = document.querySelector('.year').textContent = `©${(getYear)} Pratik Thapa | All rights reserved`;
+    const age = document.getElementById('age').textContent = `${(getYear - 2007)}`;
 </script>
 
 </body>
