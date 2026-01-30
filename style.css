@@ -336,4 +336,18 @@ footer p{
     td,tr{
         font-size: smaller;
     }
+        nav{
+        width: 90%;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: solid;
+        border-radius: 25px;
+        background-color: transparent;
+        backdrop-filter: blur(24px) saturate(190%);
+    }
+    footer{
+        padding-bottom: 50px;
+    }
 }
