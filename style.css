@@ -300,9 +300,12 @@ footer{
     *{
         font-size: 14px;
     }
+    p,a{
+        line-height: 2;
+    }
     nav{
         padding: 0 10px;
-        width: 90vw;
+        width: 100vw;
         font-size: 7px;left: 0;
         transform: translateX(0);
     }
@@ -337,6 +340,11 @@ footer{
     }
     #email{
         width: 60vw;
+        height: auto;
+        line-height: 3;
+    }
+    #email a{
+        margin: 10px 0;
     }
     #photo img{
     height: 200px;
