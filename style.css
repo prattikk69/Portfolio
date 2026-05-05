@@ -301,7 +301,7 @@ footer{
         font-size: 14px;
     }
     p,a{
-        line-height: 2;
+        line-height: 3;
     }
     nav{
         padding: 0 10px;
@@ -311,7 +311,7 @@ footer{
     }
     nav a, nav span{
         font-size: 5px;
-        height: 10px;width: 10px;
+        height: 20px;width: 20px;
     }
     #detail{
         display: flex;
