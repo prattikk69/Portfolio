@@ -315,6 +315,7 @@ footer{
     }
     .links{
         gap:15px;
+    }
     #detail{
         display: flex;
         flex-direction: column-reverse;
