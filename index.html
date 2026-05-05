@@ -1,89 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <meta name="keywords" content="Prattikk">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        (function(){
+        const t = localStorage.getItem('forma-theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+    })();
+    </script>
 </head>
 <body>
     <nav>
-        <div id="logo">
+        <div id="logo" style="font-family: 'Poppins', sans-serif; font-weight: 900;">
             Prattikk
         </div>
         
-        <div id="quick_Links">
-            <ul>
-                <li><a href="#"><i title="Home" class="fa-solid fa-house"></i><span>Home</span> </a></li>
-                <li><a href="#callSkills"><i title="Skills" class="fa-solid fa-code"></i><span>Skills</span> </a></li>
-                <li><a href="#callProjects"><i class="fa-solid fa-gear" title="Projects"></i><span>Projects</span></a></li>
-                <li><a href="#callAcademics"><i title="Academics" class="fa-solid fa-book"></i><span> Academics</span></a></li>
-                <li><a href="#callContact"><i title="Contact" class="fa-solid fa-mobile"></i><span> Contact Me</span></a></li>
-            </ul>
+        <div class="links">
+            <a href="#" title="Home"><i class="fas fa-house"></i></a>
+            <a href="#callSkills" title="Skills"><i class="fas fa-terminal"></i></a>
+            <a href="#callProjects" title="Projects"><i class="fas fa-diagram-project"></i></a>
+            <a href="#callAcademics" title="Academic"><i class="fas fa-user-graduate"></i></a>
+            <a href="#callContact" title="Contact"><i class="fas fa-address-card"></i></a>
+            <span id="icon" onclick="changeTheme()"><i class="fas fa-sun"></i></span>
         </div>
     </nav>
 
     <main>
         <section id="detail">
-            
             <div id="aboutMe">
-                <h2><span id="blink"></span></h2>
-                <p>I’m <span id="age"></span> years old and currently a first-year Bachelor student. 
-                    I have a strong passion for web development, and 
-                    I enjoy exploring new technologies to improve my 
-                    skills and create engaging projects. In my free time, 
-                    I love gaming, which helps me relax and also inspires 
-                    my creativity. I’m excited to continue learning, growing, 
-                    and building a future in the world of technology.
-                </p>
+                <h2><span id="name"></span> <span id="blink"></span></h2>
+                <p>Passionate Web Devloper / IoT Enthusiast</p>
+                <p>I’m <span id="age"></span> years old and currently a first-year Bachelor student. </p>
+                <div class="cta">
+                    <a href="http://github.com/prattikk69" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>Github</span></a>
+                    <a href="http://linkedin.com/in/prattikk" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                </div>
             </div>
             
             <div id="photo">
-                <img loading="lazy" src="Herobrine.webp" alt="">
+                <img loading="lazy" src="Herobrine.webp">
             </div>
         </section>
         <hr id="callSkills">
         <section id="skills">
             <h2>My Skills</h2>
-            <p>
-                I have strong expertise in HTML, CSS, and C, where 
-                I can confidently build efficient and clean solutions. 
-                I also have a good foundation in JavaScript and C++, PHP and I’m 
-                continuously working to improve and deepen my skills in it.
-            </p>
-            <ul>
-                <li><i class="fa-brands fa-html5" title="HTML"></i></li>
-                <li><i class="fa-brands fa-css3-alt" title="CSS"></i></li>
-                <li><i class="fa-brands fa-js" title="JavaScript"></i></li>
-                <li><i class="fa-solid fa-c" title="C"></i></li>
-                <li><i class="fa-brands fa-php" title="PHP"></i></li>
-                <li><img src="Frame 1.svg" alt="C++" title="C++"></li>
-            </ul>
+            <div class="skillContainer">
+                <p>
+                    I have strong expertise in HTML, CSS, and C/C++, where 
+                    I can confidently build efficient and clean solutions. 
+                    I also have a good foundation in JavaScript and C++ and I’m 
+                    continuously working to improve and deepen my skills in it.
+                    Currently I'm learning React JS.
+                </p>
+                <div class="skillsList">
+                    <i class="fab fa-html5" title="HTML5"></i>
+                    <i class="fab fa-css3-alt" title="CSS"></i>
+                    <i class="fab fa-js" title="JavaScript"></i>
+                    <i class="fab fa-c" title="C/C++"></i>
+                    <i class="fab fa-react" title="React"></i>
+                </div>
+            </div>
         </section>
         <hr id="callProjects">
         <section id="projects">
-            <h2>My Simple Projects</h2>
-            <p>I've created some small projects using HTML, CSS, JS, PHP and some on C++ too.
-                Including this Portfolio.
-            <p>Here are some of the my projects.</p>
-            <ul>
-                <li><a href="http://relaxhub.free.nf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-user-secret"></i>Authentication System</a></li>
-                <li><a href="http://getweatherx.web.app" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-cloud" title="Weather Forecasting WebApp"></i>Weather Forecasting</a></li>
-                    <li><a href=" https://prattikk69.github.io/Festivals_of_Nepal/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-pray"></i>About Festivals</a></li>
-                    <li><a href="http://oxgame0x.web.app" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gamepad"></i>Simple Game</a></li>
-                    <li><a href="https://prattikk69.github.io/darkPSY/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i>E-Book</a></li>
-            </ul>
-            </p>
+            <h2>My Projects</h2>
+            <div class="projectContainer">
+                <p>I've created some small projects using HTML, CSS, JS and some on PHP.
+                    Here are some of the projects. For more projects visit my github profile.
+                </p>
+                <div class="projectList">
+                    <div class="project">
+                        <p><i class="fas fa-cloud-sun"></i> Weather forecaste Project</p>
+                        <div class="projectDetail">
+                            <p>This was made using HTML, CSS and JS. I used openweathermap free api to 
+                                fetch the weather data. I had problems with <b>promises</b>, <b>async await</b> and <b>serviceworker</b> in this project
+                                , however solving the problem was really fun.
+                            </p>
+                                <a href="http://getweatherx.web.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Visit WeatherX</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p><i class="fas fa-user-secret"></i> Authentication System</p>
+                        <div class="projectDetail">
+                            <p>I've made two authentication based projects one is made with <b>PHP</b> and other with <b>JavaScript</b> with the help of<b> firebase</b>. 
+                            The project with PHP was really challanging for me. Password hashing was another challange for me in that project.
+                            Firebase made those things lot easier, it was begginer friendly.</p>
+                            <a href="http://relaxhub.free.nf" target="_blank" rel="noopener noreferrer"><i class="fab fa-php"></i> PHP based project</a> <br>
+                            <a href="http://prattikk69.github.io/auth/" target="_blank" rel="noopener noreferrer"><i class="fas fa-fire"></i> Firebase based project</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p><i class="fas fa-laptop"></i> Fake Operating System</p>
+                        <div class="projectDetail">
+                            <p>I had obsession with making my own OS, but with my current skills I couldn't make one.
+                                But with my experties in web devlopment, I decided to make a fake web OS. This fake OS is
+                                still under-development and it still requires some optimizations. The main problem I faced in this project
+                                was while making the integrated music player. I took the help of Claude AI for that.
+                            </p>
+                            <a href="http://prattikk69.github.io/Z-OS/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linux"></i> Visit Z-OS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
                 <hr id="callAcademics">
         <section id="academics">
@@ -97,19 +128,19 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>Peace-Zone</td>
+                    <td><i class="fas fa-school"></i> Peace-Zone</td>
                     <td>2022</td>
                     <td>Gaighat, Udayapur</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Arniko +2</td>
+                    <td><i class="fas fa-school-flag"></i> Arniko +2</td>
                     <td>2024</td>
                     <td>Biratnagar, Morang</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Texas College</td>
+                    <td><i class="fas fa-graduation-cap"></i> Texas College</td>
                     <td>- - - -</td>
                     <td>Mitrapark, Kathmandu</td>
                 </tr>
@@ -117,53 +148,31 @@
         </section>
         <hr id="callContact">
         <section id="contact">
-            <div id="PhNumber">
-                <h2><i class="fa-solid fa-mobile-button"></i>Contact Number</h2>
-                <p>NTC: 9765000958</p>
-                <p>Ncell: 9702634325</p>
+            <h2>Contact</h2>
+            <div class="contactContainer">
+                <div class="contactList">
+                    <p><a href="http://github.com/prattikk69" target="_blank" rel="noopener noreferrer">
+                        <span>⌥</span> github.com/prattikk69
+                    </a></p>
+                    <p><a href="http://linkedin.con/in/prattikk" target="_blank" rel="noopener noreferrer"><span>li</span>linkedin.com/in/prattikk</a></p>
+                    <p><a href="http://instagram.com/pratt1kk/" target="_blank" rel="noopener noreferrer"><span><i class="fab fa-instagram"></i></span> instagram.com/pratt1kk</a></p>
+                </div>
+                <div id="email">
+                    <p>Email me directly</p>
+                    <p>prattikkthapa@gmail.com</p>
+                    <a href="mailto:prattikkthapa@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> Write Me
+                    </a>
             </div>
-            <div id="email">
-                <p>Click here to email me:</p>
-                <a href="mailto:prattikkthapa@gmail.com">
-                    <p><i class="fa-solid fa-envelope"></i>Write Me</p>
-                </a>
-            </div>
+        </div>
         </section>
         <hr>
     </main>
     <footer>
         <div class="copyright">
-        <div class="year"></div>
-    </div>
-    <div id="socialMedias">
-            <p>More here</p>
-            <a href="https://github.com/prattikk69" target="_blank"><i class="fa-brands fa-square-github"></i>Github</a>
-            <a href="https://www.instagram.com/pratt1kk?igsh=MTNrdm1uaWNxOXp1eg==" target="_blank">
-                <i class="fa-brands fa-instagram"></i>Instagram</a>
+            <div class="year"></div>
         </div>
     </footer>
-
-    <script>
-    const text = "Hi I'm Pratik";
-    let i = 0;
-
-    function typeWriter() {
-    if (i < text.length) {
-        document.getElementById("blink").textContent += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100); // typing speed
-    }
-    }
-
-    typeWriter();
-
-
-
-    const getYear = new Date().getFullYear();
-    const year = document.querySelector('.year').textContent = `©${(getYear)} Pratik Thapa | All rights reserved`;
-    const age = document.getElementById('age').textContent = `${(getYear - 2007)}`;
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
