@@ -313,6 +313,8 @@ footer{
         font-size: 5px;
         height: 30px;width: 30px;
     }
+    .links{
+        gap:15px;
     #detail{
         display: flex;
         flex-direction: column-reverse;
