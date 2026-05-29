@@ -295,6 +295,9 @@ footer{
     height: 10vh;
     color: var(--ink3);
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 @media(max-width:500px){
     *{

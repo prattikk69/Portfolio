@@ -11,7 +11,7 @@ const text = "Hi I'm Pratik";
     typeWriter();
 //---------------------------------------------------------------------------------------------------------------------
 const getYear = new Date().getFullYear();
-const year = document.querySelector('.year').textContent = `©${(getYear)} Pratik Thapa | All rights reserved`;
+const year = document.querySelector('.year').textContent = `© 2007 - ${(getYear)} Pratik Thapa | All rights reserved`;
 const age = document.getElementById('age').textContent = `${(getYear - 2007)}`;
 //---------------------------------------------------------------------------------------------------------------------
 const lists = document.querySelectorAll('.navLi');
