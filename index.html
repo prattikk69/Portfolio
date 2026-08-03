@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?">
+    <meta name="keywords" content="Prattikk">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        (function(){
+        const t = localStorage.getItem('forma-theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+    })();
+    </script>
+</head>
+<body>
+    <nav>
+        <div id="logo" style="font-family: 'Poppins', sans-serif; font-weight: 900;">
+            Prattikk
+        </div>
+        
+        <div class="links">
+            <a href="#" title="Home"><i class="fas fa-house"></i></a>
+            <a href="#callSkills" title="Skills"><i class="fas fa-terminal"></i></a>
+            <a href="#callProjects" title="Projects"><i class="fas fa-diagram-project"></i></a>
+            <a href="#callAcademics" title="Academic"><i class="fas fa-user-graduate"></i></a>
+            <a href="#callContact" title="Contact"><i class="fas fa-address-card"></i></a>
+            <span id="icon" onclick="changeTheme()"><i class="fas fa-sun"></i></span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="detail">
+            <div id="aboutMe">
+                <h2><span id="name"></span> <span id="blink"></span></h2>
+                <p>Passionate Web Devloper / IoT Enthusiast</p>
+                <p>I’m <span id="age"></span> years old and currently a first-year Bachelor student. </p>
+                <div class="cta">
+                    <a href="http://github.com/prattikk69" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>Github</span></a>
+                    <a href="http://linkedin.com/in/prattikk" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                </div>
+            </div>
+            
+            <div id="photo">
+                <img loading="lazy" src="Herobrine.webp">
+            </div>
+        </section>
+        <hr id="callSkills">
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skillContainer">
+                <p>
+                    I have strong expertise in HTML, CSS, and C/C++, where 
+                    I can confidently build efficient and clean solutions. 
+                    I also have a good foundation in JavaScript and C++ and I’m 
+                    continuously working to improve and deepen my skills in it.
+                    Currently I'm learning React JS.
+                </p>
+                <div class="skillsList">
+                    <i class="fab fa-html5" title="HTML5"></i>
+                    <i class="fab fa-css3-alt" title="CSS"></i>
+                    <i class="fab fa-js" title="JavaScript"></i>
+                    <i class="fab fa-c" title="C/C++"></i>
+                    <i class="fab fa-react" title="React"></i>
+                </div>
+            </div>
+        </section>
+        <hr id="callProjects">
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projectContainer">
+                <p>I've created some small projects using HTML, CSS, JS and some on PHP.
+                    Here are some of the projects. For more projects visit my github profile.
+                    <br>Click on the projects for more detail.
+                </p>
+                <div class="projectList">
+                    <details class="project">
+                        <summary>
+                            <p><i class="fas fa-cloud-sun"></i> Weather forecaste Project</p>
+                        </summary>
+                        <p>This was made using HTML, CSS and JS. I used openweathermap free api to 
+                            fetch the weather data. I had problems with <b>promises</b>, <b>async await</b> and <b>serviceworker</b> in this project
+                            , however solving the problem was really fun.
+                        </p>
+                            <a href="http://getweatherx.web.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Visit WeatherX</a>
+                    </details>
+                    
+                    <details class="project">
+                        <summary>
+                            <p><i class="fas fa-user-secret"></i> Authentication System</p>
+                        </summary>
+                        <p>I've made two authentication based projects one is made with <b>PHP</b> and other with <b>JavaScript</b> with the help of<b> firebase</b>. 
+                        The project with PHP was really challanging for me. Password hashing was another challange for me in that project.
+                        Firebase made those things lot easier, it was begginer friendly.</p>
+                        <a href="http://relaxhub.free.nf" target="_blank" rel="noopener noreferrer"><i class="fab fa-php"></i> PHP based project</a> <br>
+                        <a href="http://prattikk69.github.io/auth/" target="_blank" rel="noopener noreferrer"><i class="fas fa-fire"></i> Firebase based project</a>
+                    </details>
+
+                    <details class="project">
+                        <summary>
+                            <p><i class="fas fa-laptop"></i> Pseudo Operating System</p>
+                        </summary>
+                        <p>I had obsession with making my own OS, but with my current skills I couldn't make one.
+                            But with my experties in web devlopment, I decided to make a pseudo web OS. The main problem I faced in this project
+                            was while making the integrated music player. I took the help of Claude AI for that.
+                        </p>
+                        <a href="http://prattikk69.github.io/Z-OS/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linux"></i> Visit Z-OS</a>
+                    </details>
+                </div>
+            </div>
+        </section>
+                <hr id="callAcademics">
+        <section id="academics">
+            <h2>My Academics</h2>
+            <table>
+                <tr>
+                    <th>Sn.</th>
+                    <th>Name</th>
+                    <th title="Graduated in">P.OYear</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><i class="fas fa-school"></i> Peace-Zone</td>
+                    <td>2022</td>
+                    <td>Gaighat, Udayapur</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><i class="fas fa-school-flag"></i> Arniko +2</td>
+                    <td>2024</td>
+                    <td>Biratnagar, Morang</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><i class="fas fa-graduation-cap"></i> Texas College</td>
+                    <td>- - - -</td>
+                    <td>Mitrapark, Kathmandu</td>
+                </tr>
+            </table>
+        </section>
+        <hr id="callContact">
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contactContainer">
+                <div class="contactList">
+                    <p><a href="http://github.com/prattikk69" target="_blank" rel="noopener noreferrer">
+                        <span>⌥</span> github.com/prattikk69
+                    </a></p>
+                    <p><a href="http://linkedin.con/in/prattikk" target="_blank" rel="noopener noreferrer"><span>li</span>linkedin.com/in/prattikk</a></p>
+                    <p><a href="http://instagram.com/pratt1kk/" target="_blank" rel="noopener noreferrer"><span><i class="fab fa-instagram"></i></span> instagram.com/pratt1kk</a></p>
+                </div>
+                <div id="email">
+                    <p>Email me directly</p>
+                    <p>prattikkthapa@gmail.com</p>
+                    <a href="mailto:prattikkthapa@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> Write Me
+                    </a>
+            </div>
+        </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="copyright">
+            <div class="year"></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
